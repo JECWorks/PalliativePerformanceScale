@@ -10,6 +10,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet var ambulationCombo: NSComboBox!
+    @IBOutlet var activityCombo: NSComboBox!
+    @IBOutlet var assistCombo: NSComboBox!
+    @IBOutlet var oralCombo: NSComboBox!
+    @IBOutlet var mentalCombo: NSComboBox!
+    @IBOutlet var lifeCombo: NSComboBox!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
