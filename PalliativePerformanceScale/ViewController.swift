@@ -13,8 +13,11 @@ class ViewController: NSViewController {
     @IBOutlet var ambulationCombo: NSComboBox!
     @IBOutlet var activityCombo: NSComboBox!
     @IBOutlet var assistCombo: NSComboBox!
+    //How much oral intake does the patient have?
     @IBOutlet var oralCombo: NSComboBox!
+    //Level of consciousness
     @IBOutlet var mentalCombo: NSComboBox!
+    //Estimated median survival in days
     @IBOutlet var survivalPop: NSPopUpButton!
     
     
@@ -32,6 +35,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func submitButton(_ sender: Any) {
+        //code here to submit
     }
     
 }
