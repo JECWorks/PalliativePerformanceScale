@@ -766,20 +766,6 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-0R-0MF">
-                                <rect key="frame" x="294" y="64" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="tft-93-D93">
-                                    <font key="font" metaFont="titleBar"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <objectValues>
-                                        <string>Item 1</string>
-                                        <string>Item 2</string>
-                                        <string>Item 3</string>
-                                    </objectValues>
-                                </comboBoxCell>
-                            </comboBox>
                             <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMt-gk-p2M">
                                 <rect key="frame" x="58" y="64" width="99" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -794,15 +780,41 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-ls-rdE">
+                                <rect key="frame" x="200" y="13" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DmD-th-eFQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="submitButton:" target="XfG-lQ-9wD" id="o2m-wq-Qpn"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-9l-zLO">
+                                <rect key="frame" x="293" y="61" width="77" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="b93-YG-04I" id="jQR-Pl-dbF">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="G5j-5Q-S93">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="b93-YG-04I"/>
+                                            <menuItem title="Item 2" id="OhM-2W-4pv"/>
+                                            <menuItem title="Item 3" id="HRi-ay-pFa"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="activityCombo" destination="mWN-kN-9Fk" id="rLg-n5-PBU"/>
                         <outlet property="ambulationCombo" destination="ZIL-oh-Kh3" id="jQf-7l-PSb"/>
                         <outlet property="assistCombo" destination="wMt-gk-p2M" id="Fu0-Hr-DzW"/>
-                        <outlet property="lifeCombo" destination="gbc-0R-0MF" id="veG-p8-nQS"/>
                         <outlet property="mentalCombo" destination="m8F-S2-xj6" id="X46-yq-chL"/>
                         <outlet property="oralCombo" destination="kg3-0j-h7T" id="wZS-b8-WVv"/>
+                        <outlet property="survivalPop" destination="gh7-9l-zLO" id="ZeU-Na-olk"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

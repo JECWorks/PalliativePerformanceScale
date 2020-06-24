@@ -15,7 +15,8 @@ class ViewController: NSViewController {
     @IBOutlet var assistCombo: NSComboBox!
     @IBOutlet var oralCombo: NSComboBox!
     @IBOutlet var mentalCombo: NSComboBox!
-    @IBOutlet var lifeCombo: NSComboBox!
+    @IBOutlet var survivalPop: NSPopUpButton!
+    
     
     
     override func viewDidLoad() {
@@ -30,6 +31,8 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func submitButton(_ sender: Any) {
+    }
+    
 }
 
