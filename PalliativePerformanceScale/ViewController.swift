@@ -38,5 +38,12 @@ class ViewController: NSViewController {
         //code here to submit
     }
     
+    @IBAction func ambuChosen(_ sender: Any) {
+        // Select an ambulation option
+        // Let that return a value that goes into the PPS calculation
+    }
+    
+    
+    
 }
 
