@@ -710,24 +710,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-oh-Kh3">
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-oh-Kh3">
                                 <rect key="frame" x="58" y="224" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="jGd-8j-rHY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="FHv-Gi-nGf"/>
+                                    <constraint firstAttribute="height" constant="22" id="gzR-lM-nGM"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Ambulation" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="jGd-8j-rHY">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <objectValues>
-                                        <string>Item 1</string>
-                                        <string>Item 2</string>
-                                        <string>Item 3</string>
+                                        <string>Full</string>
+                                        <string>Reduced</string>
+                                        <string>Mainly sit/lie</string>
+                                        <string>Mostly bedbound</string>
+                                        <string>Bedbound</string>
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWN-kN-9Fk">
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mWN-kN-9Fk">
                                 <rect key="frame" x="58" y="142" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0iV-3v-h4W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="4Hg-5U-cLx"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Activity" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0iV-3v-h4W">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -738,24 +745,30 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-0j-h7T">
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-0j-h7T">
                                 <rect key="frame" x="294" y="224" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="PZv-Gb-7WQ">
-                                    <font key="font" usesAppearanceFont="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="Vw7-6v-XfP"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Intake" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="PZv-Gb-7WQ">
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <objectValues>
-                                        <string>Item 1</string>
-                                        <string>Item 2</string>
-                                        <string>Item 3</string>
+                                        <string>Normal</string>
+                                        <string>Slightly reduced</string>
+                                        <string>Reduced</string>
+                                        <string>Minimal/sips</string>
+                                        <string>None</string>
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8F-S2-xj6">
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m8F-S2-xj6">
                                 <rect key="frame" x="295" y="142" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="y1R-nS-5zg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="Ex2-BZ-HpL"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Mental" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="y1R-nS-5zg">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -766,10 +779,9 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMt-gk-p2M">
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wMt-gk-p2M">
                                 <rect key="frame" x="58" y="64" width="99" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="f0F-KF-mer">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Assistance" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="f0F-KF-mer">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -780,20 +792,21 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-ls-rdE">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-ls-rdE">
                                 <rect key="frame" x="200" y="13" width="81" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DmD-th-eFQ">
+                                <buttonCell key="cell" type="push" title="Submit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DmD-th-eFQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="uBI-at-YZD"/>
+                                </constraints>
                                 <connections>
                                     <action selector="submitButton:" target="XfG-lQ-9wD" id="o2m-wq-Qpn"/>
                                 </connections>
                             </button>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-9l-zLO">
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-9l-zLO">
                                 <rect key="frame" x="293" y="61" width="77" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="b93-YG-04I" id="jQR-Pl-dbF">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -805,8 +818,32 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="x0Y-az-gZj"/>
+                                </constraints>
                             </popUpButton>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kg3-0j-h7T" secondAttribute="trailing" constant="90" id="4Po-GV-qvs"/>
+                            <constraint firstItem="mWN-kN-9Fk" firstAttribute="firstBaseline" secondItem="m8F-S2-xj6" secondAttribute="firstBaseline" id="4ec-UP-Pdu"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="baseline" secondItem="kg3-0j-h7T" secondAttribute="baseline" id="IHP-GD-sg8"/>
+                            <constraint firstItem="JTV-ls-rdE" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Ojp-lR-rkO"/>
+                            <constraint firstItem="m8F-S2-xj6" firstAttribute="leading" secondItem="gh7-9l-zLO" secondAttribute="leading" id="Qwn-Y9-aiW"/>
+                            <constraint firstAttribute="trailing" secondItem="m8F-S2-xj6" secondAttribute="trailing" constant="89" id="U81-RW-O0R"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="trailing" secondItem="mWN-kN-9Fk" secondAttribute="trailing" id="Uvv-wb-LLc"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="V5B-OC-Dsw"/>
+                            <constraint firstItem="mWN-kN-9Fk" firstAttribute="trailing" secondItem="wMt-gk-p2M" secondAttribute="trailing" id="Vv3-93-d37"/>
+                            <constraint firstItem="mWN-kN-9Fk" firstAttribute="baseline" secondItem="m8F-S2-xj6" secondAttribute="baseline" id="Yor-P9-PUW"/>
+                            <constraint firstItem="mWN-kN-9Fk" firstAttribute="top" secondItem="ZIL-oh-Kh3" secondAttribute="bottom" constant="60" id="bAH-1r-m5a"/>
+                            <constraint firstAttribute="bottom" secondItem="JTV-ls-rdE" secondAttribute="bottom" constant="20" symbolic="YES" id="boK-OO-hqu"/>
+                            <constraint firstItem="mWN-kN-9Fk" firstAttribute="leading" secondItem="wMt-gk-p2M" secondAttribute="leading" id="cip-ZT-YyO"/>
+                            <constraint firstItem="gh7-9l-zLO" firstAttribute="top" secondItem="m8F-S2-xj6" secondAttribute="bottom" constant="59" id="dfw-tv-UjO"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="59" id="fKb-us-5EC"/>
+                            <constraint firstItem="wMt-gk-p2M" firstAttribute="top" secondItem="mWN-kN-9Fk" secondAttribute="bottom" constant="56" id="mWm-Vi-KGJ"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="firstBaseline" secondItem="kg3-0j-h7T" secondAttribute="firstBaseline" id="teR-Ys-vx0"/>
+                            <constraint firstItem="wMt-gk-p2M" firstAttribute="baseline" secondItem="gh7-9l-zLO" secondAttribute="firstBaseline" id="ydS-n6-qve"/>
+                            <constraint firstItem="ZIL-oh-Kh3" firstAttribute="leading" secondItem="mWN-kN-9Fk" secondAttribute="leading" id="zGA-gJ-AuN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="activityCombo" destination="mWN-kN-9Fk" id="rLg-n5-PBU"/>
