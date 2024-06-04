@@ -20,6 +20,12 @@ class ViewController: NSViewController {
     //Estimated median survival in days
     @IBOutlet var survivalPop: NSPopUpButton!
     
+    @IBOutlet weak var ambuPopUpButton: NSPopUpButton!
+    
+    @IBOutlet weak var fullAmbu: NSMenuItem!
+    @IBOutlet weak var reducedAmbulation: NSMenuItem!
+    @IBOutlet weak var partlyBedbound: NSMenuItem!
+    @IBOutlet weak var bedBound: NSMenuItem!
     
     
     override func viewDidLoad() {

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22689"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -797,7 +797,8 @@
                                         <items>
                                             <menuItem title="Full ambulation" state="on" id="WRs-sb-ZD2"/>
                                             <menuItem title="Reduced ambulation" id="rbA-uE-MMh"/>
-                                            <menuItem title="Bedbound" id="F0y-Uq-DTp"/>
+                                            <menuItem title="Much reduced or partly bedbound" id="F0y-Uq-DTp"/>
+                                            <menuItem title="Bedbound" id="rL1-kz-IpG"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
@@ -862,10 +863,15 @@
                     </view>
                     <connections>
                         <outlet property="activityCombo" destination="mWN-kN-9Fk" id="rLg-n5-PBU"/>
+                        <outlet property="ambuPopUpButton" destination="Uem-VR-wXL" id="xwP-WK-p9G"/>
                         <outlet property="ambulationCombo" destination="ZIL-oh-Kh3" id="jQf-7l-PSb"/>
                         <outlet property="assistCombo" destination="wMt-gk-p2M" id="Fu0-Hr-DzW"/>
+                        <outlet property="bedBound" destination="rL1-kz-IpG" id="OGh-Y2-Pk5"/>
+                        <outlet property="fullAmbu" destination="WRs-sb-ZD2" id="Uba-Dd-B20"/>
                         <outlet property="mentalCombo" destination="m8F-S2-xj6" id="X46-yq-chL"/>
                         <outlet property="oralCombo" destination="kg3-0j-h7T" id="wZS-b8-WVv"/>
+                        <outlet property="partlyBedbound" destination="F0y-Uq-DTp" id="4a4-ug-3Sk"/>
+                        <outlet property="reducedAmbulation" destination="rbA-uE-MMh" id="jr4-mQ-ipa"/>
                         <outlet property="survivalPop" destination="gh7-9l-zLO" id="ZeU-Na-olk"/>
                     </connections>
                 </viewController>
